@@ -20,6 +20,7 @@ const router = createBrowserRouter([
     {
         path: "/fiche/:id",
         element: <Fiche/>,
+        errorElement: <NotFound/>
     },
 ]);
 
