@@ -13,7 +13,7 @@ export const Fiche = () => {
     const [logement, setLogement] = useState({})
 
     useEffect(() => {
-        fetch(`http://localhost:3000/logements.json`)
+        fetch(`${process.env.PUBLIC_URL}/logements.json`)
             .then((response) => response.json()
                 .then((res) => {
                     const data = res.filter(logement => logement.id === params.id)
