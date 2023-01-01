@@ -8,7 +8,7 @@ export function Header() {
     return (
         <header>
             <div>
-                <img src={logo} alt="logo"/>
+                <img className="logo" src={logo} alt="logo"/>
             </div>
             <div>
                 <nav>

@@ -1,8 +1,8 @@
-export const Banner = () => {
+export const Banner = ({title, bg}) => {
     return (
-        <div className="banner">
+        <div className="banner" style={{backgroundImage: `url(${bg})`}}>
             <div>
-                <span>Chez vous, partout et ailleurs</span></div>
+                <span>{title}</span></div>
         </div>
     );
 }

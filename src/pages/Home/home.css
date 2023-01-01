@@ -1,8 +1,8 @@
 .banner {
     width: 100%;
     height: 250px;
-    background: url(./../../assets/images/banner.jpeg) no-repeat center;
     background-size: cover;
+    background-position: center;
     border-radius: 25px;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .banner > div > span {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', serif;
     font-style: normal;
     font-weight: 500;
     font-size: 48px;
@@ -53,7 +53,7 @@
 }
 
 .card > span {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', serif;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;

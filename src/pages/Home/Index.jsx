@@ -1,11 +1,15 @@
 import {Main} from "../../layouts/Main";
 import './home.css';
+import banner from "../../assets/images/banner.jpeg"
 import {Banner} from "../../components/Banner";
 import {useEffect, useState} from "react";
 import {Card} from "../../components/Card";
 
+
 export const Home = () => {
+
     const [logements, setLogements] = useState([])
+
     useEffect(() => {
         fetch(`http://localhost:3000/logements.json`)
             .then((response) => response.json()
@@ -15,9 +19,12 @@ export const Home = () => {
                 .catch((error) => console.log(error))
             )
     }, [])
+
     return (
         <Main>
-            <Banner></Banner>
+            <Banner
+                bg={banner} title="Chez vous, partout et ailleurs"></Banner>
+
             <div className="cards">
                 {logements.map((logement) => {
                     return (

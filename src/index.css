@@ -30,3 +30,44 @@ nav ul li {
     font-size: 24px;
     line-height: 142.6%;
 }
+
+footer {
+    height: 200px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', serif;
+    margin-top: 30px;
+}
+
+.copyright {
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 10px 0;
+    }
+
+    .container {
+        margin: 0 10px;
+    }
+
+    nav ul li {
+        margin-left: 20px;
+    }
+
+
+    .navlink {
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+
+    .logo {
+        width: 100px;
+    }
+}
+
