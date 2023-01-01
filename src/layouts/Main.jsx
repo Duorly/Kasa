@@ -3,7 +3,7 @@ import {Footer} from "../components/Footer";
 
 export const Main = (props) => {
     return (
-        <div>
+        <div className="container">
             <Header></Header>
             {props.children}
             <Footer></Footer>

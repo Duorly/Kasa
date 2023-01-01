@@ -1,7 +1,9 @@
 import './about.css';
+import {Main} from "../../layouts/Main";
 
 export const About = () => {
     return (
-        <div> À propos </div>
+        <Main> À propos
+        </Main>
     );
 }
