@@ -1,9 +1,8 @@
 .collapse {
     margin-top: 30px;
-    width: 100%;
+    width: 100% !important;
     font-family: 'Montserrat', serif;
     color: #FFFFFF;
-
 }
 
 .collapse-head {
@@ -31,4 +30,13 @@
 .collapse-title {
     font-weight: 500;
     font-size: 24px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .collapse-content {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17px;
+    }
 }

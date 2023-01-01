@@ -1,6 +1,6 @@
 import {useState} from "react";
 
-export const Collapse = ({title, content, open = false}) => {
+export const Collapse = ({title, content, open = false, list}) => {
 
     const [isOpen, Switch] = useState(open);
 
@@ -17,7 +17,14 @@ export const Collapse = ({title, content, open = false}) => {
                 </div>
             </div>
             {isOpen &&
-                <div className="collapse-content">{content}
+                <div className="collapse-content">
+                    {content}
+                    {list && <ul>
+
+                        {list?.map((element, i) => {
+                            return (<li className="list-none" key={i}>{element}</li>)
+                        })}
+                    </ul>}
                 </div>}
         </div>
     );

@@ -6,6 +6,7 @@
 
 .container {
     margin: 0 80px;
+    font-family: 'Montserrat', serif;
 }
 
 header {
@@ -24,7 +25,6 @@ nav ul li {
 .navlink {
     text-decoration: none;
     color: var(--primary);
-    font-family: 'Montserrat', serif;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -39,12 +39,22 @@ footer {
     justify-content: center;
     color: white;
     text-align: center;
-    font-family: 'Montserrat', serif;
     margin-top: 30px;
 }
 
 .copyright {
     margin-top: 20px;
+}
+
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-none {
+    list-style: none;
 }
 
 @media only screen and (max-width: 600px) {
