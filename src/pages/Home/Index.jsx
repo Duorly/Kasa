@@ -11,7 +11,7 @@ export const Home = () => {
     const [logements, setLogements] = useState([])
 
     useEffect(() => {
-        fetch(`http://localhost:3000/logements.json`)
+        fetch(`${process.env.PUBLIC_URL}/logements.json`)
             .then((response) => response.json()
                 .then((data) => {
                     setLogements(data)
